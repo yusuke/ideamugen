@@ -66,7 +66,7 @@ Twitter4Jが見つからない場合はPreferences>Maven>Repositoriesよりrepo1
 #Chrononを使ったデバッグ
 Run>Edit Configurations...>Chrononよりタイムラインをダンプするクラスと、twitter4j.*をChrononのカバー対象として設定  
 ![chronon-config](./images/chronon-config.jpeg)  
-Run *** with Chronon(実行ボタンの三つ右の黄色いアイコン)より実行
+Run *** with Chronon(実行ボタンの三つ右の黄色いアイコン)より実行  
 ![run-with-chronon](./images/run-with-chronon.jpeg)  
 
 
