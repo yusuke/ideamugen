@@ -42,8 +42,10 @@ Shift + Ctrl + F10では今カーソルがあるクラスのmainメソッド、�
 5. Details>Application Settings>Access level>modify app permissionsより"Read and Write"に変更してアプリケーションからのツイートを可能にする
 6. API Keysのタブに移動し、Access levelがRead and writeになっているのを確認する(反映までしばらく時間がかかることもあるので、なっていない場合は1、2分待ってリロード
 7. API Keys>Create my access tokenを押してアクセストークンを生成。  
-しばらく待ってからリロードするとアクセストークンが生成されているのでAPI key、API secret、Access token、Access token secretを保存  
-![access token](./images/access_token.jpeg)
+しばらく待ってからリロードするとアクセストークンが生成されているのでAPI key、API secret、Access token、Access token secretをsrc/main/resources/twitter4j.propertiesに保存  
+![access token](./images/access_token.jpeg)  
+![twitter4j.properties](./images/twitter4j-prop.jpeg)  
+参考:[Twitter4J-設定](http://twitter4j.org/ja/configuration.html)
 
 #ホームタイムラインのダンプ
 1. 新しいクラスを作り、mainメソッド内に"TwitterFactory"と記載
@@ -61,6 +63,13 @@ Twitter4Jが見つからない場合はPreferences>Maven>Repositoriesよりrepo1
 10. 実行  
 ![hometimeline](./images/hometimeline.jpeg)
 
+#Chrononを使ったデバッグ
+Run>Edit Configurations...>Chrononよりタイムラインをダンプするクラスと、twitter4j.*をChrononのカバー対象として設定  
+![chronon-config](./images/chronon-config.jpeg)  
+Run *** with Chronon(実行ボタンの三つ右の黄色いアイコン)より実行
+![run-with-chronon](./images/run-with-chronon.jpeg)  
+
+
 #IDEAコード補完tips
 
 #GitHubとの連携
@@ -69,4 +78,3 @@ Twitter4Jが見つからない場合はPreferences>Maven>Repositoriesよりrepo1
 
 #Spring Bootによる簡単なWebアプリケーション化
 
-#Chrononを使ったデバッグ
